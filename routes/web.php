@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('message-board', 'MessageBoardController@index')->name('message-board');
+//Route::get('lock-picking', 'MessageBoardController@index')->name('lock-picking');
+//Route::get('dev-blog', 'MessageBoardController@index');
